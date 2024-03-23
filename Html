@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="C:\Users\THANSHIYA\Downloads\png-clipart-dog-paw-panda-paw-paw-monochrome.png"></a>
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="index.php">About</a>
+
+      </div>
+      
+      
+      </div>
+    <center><h1 style="color: black;">SOME PAWS</h1></center>
+    <div class="container">
+    <div>
+        <img src="" alt="not image"height="300">
+    </div>
+    <div class="bg-aqua">
+        <center><h1>ABOUT PAWS</h1>
+        <p>A pet shop or pet store is an essential services retailer which sells animals and pet care resources to the public. A variety of animal supplies and pet accessories are also sold in pet shops. The products sold include: food, treats, toys, collars, leashes, cat litter, cages and aquariums.Some provide services like walking and grooming, while others provide products like bowls and chew toys. Some pet stores target cat and dog owners, while others may specialize in more niche pets, like reptiles and arachnids.They sell pet supplies including food, medicine, toys, carriers, and educational books and videos. They work with customers, answering questions and offering animal care advice.
+            A pet shop or pet store is an essential services retailer which sells animals and pet care resources to the public. A variety of animal supplies and pet accessories are also sold in pet shops. The products sold include: food, treats, toys, collars, leashes, cat litter, cages and aquariums.Some provide services like walking and grooming, while others provide products like bowls and chew toys. Some pet stores target cat and dog owners, while others may specialize in more niche pets, like reptiles and arachnids.They sell pet supplies including food, medicine, toys, carriers, and educational books and videos. They work with customers, answering questions and offering animal care advice.
+
+        </p></center>
+    </div>
+    </div>
+    <div>
+        <ul style="list-style-type: none;">
+            <li><a style="text-decoration: none;" href="#">HOME</a></li>
+            <li><a style="text-decoration: none;" href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+   <div id ="products">
+    <div class="product1">
+        <img src="E:\New folder\project\download.jpg" alt="" width=" 200">
+        <h2>western breed</h2>
+        <p>$3000</p>
+        
+        <div class="add-to-cart">  <button class="button button2">Add to cart</button>
+             </div>
+
+    
+    </div>
+    <div class="product1">
+        <img src="E:\New folder\project\download (1).jpg" alt="" width=" 200">>
+        <h2>dog</h2>
+        <p>$30</p>
+        <div class="add-to-cart">  <button class="button button2">Add to cart</button></div>
+    </div>
+    <div class="product1">
+        <img src="persian-cat.jpg" alt="" width=" 200">
+        <h2>Persian Smoke Cat</h2>
+        <p>$60</p>
+        <div class="add-to-cart">  <button class="button button2">Add to cart</button></div>
+    </div>
+    
+      <script>
+        .then((res)=>res.json())
+        .then((data)=> {
+            for(let i;i<data.length;i++)
+            {
+
+             document.getElementById("project").innerHTML+=<div class="project">
+                <img src = $ {data[i].image} alt="">
+                <h1>${data[i].name}</h1>
+                <p>price &#8377;${data[i].price}</p>
+                <p>${data[i].description}</p>
+                <button class="Add to cart">Add to cart</button></div> 
+            }
+        });
+      </script>
+    </body>
+</html>
