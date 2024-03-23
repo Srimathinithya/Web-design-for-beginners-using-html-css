@@ -1,2 +1,2 @@
 # Web-design-for-beginners-using-html-css
-Welcome to our pet shop, where furry dreams come true! Step into a world of wagging tails, soft purrs, and boundless love. From playful puppies to cuddly kittens, we offer a diverse selection of companions waiting to steal your heart. 
+Basic and simple program code for pet shop for beginners it is very useful to learn fast using html and cs and lite basics of json
